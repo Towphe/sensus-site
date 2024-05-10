@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom';
 import Root from './pages/Root';
 import Homepage from './pages/Homepage';
+import CreatePoll from './pages/CreatePoll';
 
 function App() {
 
@@ -15,6 +16,10 @@ function App() {
         {
           path: '/',
           element: <Homepage />
+        },
+        {
+          path: '/create-poll',
+          element: <CreatePoll />
         }
       ]
     }
