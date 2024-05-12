@@ -6,6 +6,7 @@ import Root from './pages/Root';
 import Homepage from './pages/Homepage';
 import CreatePoll from './pages/CreatePoll';
 import ViewPoll from './pages/ViewPoll';
+import AnswerPoll from './pages/AnswerPoll';
 
 function App() {
   const router = createBrowserRouter([
@@ -24,6 +25,10 @@ function App() {
         {
           path: '/view-poll/:pollId',
           element: <ViewPoll />
+        },
+        {
+          path: '/answer-poll/:pollId',
+          element: <AnswerPoll />
         }
       ]
     }

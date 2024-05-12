@@ -39,7 +39,7 @@ function ViewPoll(){
                             navigate('/', {replace: true});
                             break;
                     }
-                })
+                });
         }    
 
         retrievePoll();
